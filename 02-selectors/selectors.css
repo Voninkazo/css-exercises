@@ -1,5 +1,5 @@
-/* 1 pseudo-element selector= Select everything in the document */
-::selection {
+/* 1 universal selector= Select everything in the document */
+* {
   all: unset;
 }
 
