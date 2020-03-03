@@ -4,7 +4,8 @@
 }
 
 
-/* 2 element selector= Select only table elements */
+/* 2 = Select only table elements
+Element selector*/
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -18,99 +19,121 @@ table {
 }
 
 
-/* 4 descendent combinator= Select any `h1` element that is a descendent of the `header` element */
+/* 4 = Select any `h1` element that is a descendent of the `header` element
+Descendent combinator*/
 header h1 {
   font-size: 4rem;
   margin-bottom: 0;
 }
 
 
-/* 5 child combinator= Select only the `ul` elements that are children of the `nav` element */
-nav>ul {
+/* 5 = Select only the `ul` elements that are children of the `nav` element
+Child combinator(or Direct descendent)*/
+nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 
-/* 6 pseudo-class selector= Select only the first child paragraph within a `section` element */
-section:first-child {
+/* 6 = Select only the first child paragraph within a `section` element
+Pseudo-class selector, Element selectors, Child selector*/
+section > p:first-child {
   font-size: 1.5rem;
 }
 
 
-/* 7 element selector= Select any heading element */
-heading {
+/* 7 element selector= Select any heading element
+Element selector, as a list*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
 
-/* 8 pseudo-class selector= Select all anchors that are also links */
+/* 8 = Select all anchors that are also links
+Pseudo-class selector
+Eement selector*/
 a:link {
   text-decoration: underline;
 }
 
 
-/* 9 pseudo-class selector= Select any anchor that is hovered over with the mouse */
+/* 9 = Select any anchor that is hovered over with the mouse
+Pseudo-class selector
+Element selector*/
 a:hover {
   text-decoration: none;
 }
 
 
-/* 10 ID selector= Select only the element with ID value equal to `captain` */
+/* 10 = Select only the element with ID value equal to `captain`
+ID selector*/
 #captain {
   border: 5px solid gold;
   border-radius: 5px;
 }
 
 
-/* 11 class selector= Select all paragraph elements that have a class value of `hidden` */
+/* 11 = Select all paragraph elements that have a class value of `hidden`
+class selector
+Element selector*/
 p.hidden {
   display: none;
 }
 
 
-/* 12 attribute selector= Select all form elements that have a method attribute set to `POST` */
-form[method=POST] {
+/* 12 = Select all form elements that have a method attribute set to `POST`
+Attribute selector
+Element selector*/
+form[method="POST"] {
   box-shadow: 2px 2px 5px rgba(0,0,0,.1);
 }
 
 
-/* 13 attribute selector= Select any element that has a `required` attribute defined */
+/* 13 = Select any element that has a `required` attribute defined
+Attribute selector(without value)*/
 [required] {
   border-color: red;
 }
 
 
-/* 14 General sibling combinator= Select any sibling paragraph elements that are preceeded by an `h3` */
+/* 14 = Select any sibling paragraph elements that are preceeded by an `h3`
+General sibling combinator
+Element selectors*/
 h3 ~ p {
   color: #66F;
 }
 
 
-/* 15 adjacent sibling combinator= Select any sibling paragraph elements that directly follow an `h3` */
+/* 15 = Select any sibling paragraph elements that directly follow an `h3`
+Adjacent sibling combinator
+Element selectors*/
 h3 + p {
   font-size: 1.5rem;
 }
 
 
-/* 16 = Select every cell within each odd table row */
-tr:nth-child(odd) {
+/* 16 = Select every cell within each odd table row
+pseudo-class selector
+element selector*/
+tr:nth-of-type(odd) > * {
   background-color: rgba(0,0,0,.1);
 }
 
-
 /* 17 attribute selector= Select any `img` element that doesn't have a `alt` attribute */
-img[attr$=alt] {
+img:not([alt]) {
   border: 5px solid red;
 }
 
-
 /* 18 pseudo-class selector= Select any `p` element that doesn't have any contents */
-p:not(contents) {
+p:empty {
   display: none;
 }
-
 
 /* 19 pseudo-class selector= Select the root of the document or fragment */
 :root {
