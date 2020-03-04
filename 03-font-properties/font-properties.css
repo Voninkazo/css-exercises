@@ -6,3 +6,166 @@
   /* Property example with a value */
 
 }
+/*
+  font-family
+  It states a prioritized list of one or more font-family names
+  */
+  /*Example*/
+.font-family {
+  font-family: cursive;
+}
+
+/*
+font-size
+This property sets the size of the font, we also can use em or rem to specify how big the letters you want to be.
+*/
+/*Example*/
+.font-size {
+  font-size: small;
+}
+
+/*font-weight
+It specify the boldness of the font.
+*/
+/*Example*/
+.font-weight {
+  font-weight: bolder;
+}
+
+/*
+font-style
+It styles the font with normal, italic or oblique.
+*/
+/*Example*/
+.font-style {
+  font-style: italic;
+}
+
+/*
+line-height
+This is used to set the distance between the line box in a text with noormal, em, or px.
+*/
+/*Example*/
+.line-height {
+  line-height: 10em;
+}
+
+/*
+font-variant
+It is a shorter form to represent the font. These are included: s font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian.
+*/
+/*Example*/
+.font-variant {
+  font-variant-numeric: slashed-zero;
+}
+
+/*
+font-stretch
+It is used to select a normal, condensed, or expanded face from a font. There are three types of font-stretch:
+*/
+/*Example*/
+/*Keyword value*/
+.font-stretch {
+  font-stretch: ultra-condensed;
+}
+/* .font-stretchercentage value */
+.font-stretch {
+  font-stretch: 50%;
+}
+/* Global value */
+.font-stretch{
+  font-stretch: inherit;
+}
+
+/*
+font-size adjust
+It is used to specify how the size should be chosen, it depends on the height of lowercase  rather than the capital letters.
+*/
+.font-size-adjust {
+  font-size-adjust: 1;
+}
+
+/*
+font-synthesis
+It controls which missing typfaces,bold or italic.
+*/
+/* Example */
+.font-synthesis {
+  font-synthesis: weight style;
+}
+
+/* letter-spacing
+It is used to control the spaces between text characters.
+*/
+/* Example */
+.letter-spacing {
+  letter-spacing: .2rem;
+}
+
+/*
+word-spacing
+This defines the length between words and between tags.
+*/
+/*Example*/
+.word-spacing {
+  word-spacing: 4px;
+}
+
+/*
+text-align
+It sets the horizontal alignment of a block element or a atable-cell.
+*/
+/* Example */
+.text-align {
+  text-align: right;
+}
+
+/*
+text-decoration-line
+It is used to decorate a text in an element such as underline or overline.
+*/
+/* Example */
+.text-decoration-line {
+  text-decoration-line: underline;
+}
+
+/*
+text-decoration-style
+This style the lines styled by the .text-decoration-line.
+*/
+.text-decoration-style {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+/*
+text-decoration-color
+It sets the decoration color added to the text by the .text-decoration-line.
+*/
+/* Example */
+.text-decoration-color {
+  text-decoration-line: underline;
+  text-decoration-color: yellow;
+}
+
+/*
+text-indent
+It gives the length of the empty space that is put before lines of text in a block.
+*/
+/* Example */
+.text-indent {
+  text-indent: 5rem;
+}
+/*text-transform
+It specifies how to capitalize a paragraph's text. It can be used to make text appears all-upercase or all-lowercase.
+*/
+.text-transform {
+  text-transform: lowercase;
+}
+
+/*
+vertical-align
+It sets the alignment of an inline.
+*/
+/* Example */
+.
