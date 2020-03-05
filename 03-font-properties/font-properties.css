@@ -168,4 +168,14 @@ vertical-align
 It sets the alignment of an inline.
 */
 /* Example */
-.
+.vertical-align{
+  vertical-align: top;
+}
+
+/*
+white-space
+It sets line breaks inside an element.
+*/
+.white-space {
+  white-space: pre-wrap;
+}
