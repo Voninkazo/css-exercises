@@ -1,0 +1,65 @@
+.example h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-block-end: 1em;
+}
+
+.example h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+
+.example h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+}
+.example h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-end: 1em;
+  font-variant-ligatures: small-caps;
+}
+
+.intro {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-block-end: 1em;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block-end: 1em;
+}
+
+.small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-block-end: 1em;
+}
+
+#section_sans_serif h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
+}
+
+#section_serif {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#section_monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
