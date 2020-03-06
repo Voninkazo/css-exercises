@@ -1,8 +1,79 @@
-* {
   /*
-    Property name
-    Property description
+  Color
+  It is used to decorate the text in an element by using different color.
   */
-    /* Property example with a value */
+.color {
+  color: rgba(255, 0, 76, 0.5);
+  font-size: 50px;
+  font-weight: bold;
+  background-color: yellow;
+  text-align: center;
+  padding: 5rem;
+}
+p:before {
+  content: "he";
+  color: yellow;
+}
+  /*Background-color
+  It sets the background color of an element.
+  */
 
-  }
+.background-color {
+  background-color: chartreuse;
+}
+
+  /*Background-image
+  This sets one or more background images on an element.
+  */
+.backgroud-image {
+  background-image: url("flowers.jpeg");
+}
+
+  /*Background-repeat
+  It sets how background-image repeated.
+  */
+.backgroud-repeat {
+  background-repeat: repeat;
+}
+
+  /*Background-position
+  It is used to set the position for each background images to be on the top, left or right.
+  */
+.backgroud-position {
+  background-position: top;
+}
+
+  /*Background-attachment
+  It sets the background images'position to be fixed or scroll.
+  */
+.backgroud-attachment {
+  background-attachment: scroll;
+}
+
+  /*Background-clip
+  This controls the border box of a background on an element.
+  */
+.backgroud-clip {
+  background-clip: content-box;
+}
+
+  /*Background-origin
+  It sets the background's origin: from the border start, inside the border, or inside the padding.
+  */
+.backgroud-origin {
+  background-origin: padding-box;
+}
+
+  /*Background-size
+  It sets the size of the element's background image. That can be left or stretched.
+  */
+.backgroud-size {
+  background-size: contain;
+}
+
+  /*Box-shadow
+  It adds shadow's effects in an element's frame, Effects can be multiple separated by commas. It is described by X and Y.
+  */
+.box-shadow {
+  box-shadow: cyan;
+}
