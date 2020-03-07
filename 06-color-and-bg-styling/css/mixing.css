@@ -3,51 +3,32 @@
 .dory_background {
   background-color: aqua;
   background-image: linear-gradient(to bottom,rgba(255,55,0,0.5), rgba(0,0,255,0.5));
-  background-image: url(../images/bubble.png), url(../images/coral-reef.png);
-  background-position: center;
-  background-repeat: round;
-  background-size: 700px;
+  background-image: url(../images/bubble.png),
+                    url(../images/coral-reef.png),
+                    url(../images/crab.png);
+  background-position: center, bottom, left;
+  background-repeat: round, no-repeat, no-repeat;
+  background-size: 500px, 800px, 500px;
 }
-.crab {
-  background-image: url(../images/crab.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 300px;
-}
+
 .henry_background {
-  background-color:powderblue;
-  background-image: linear-gradient(to top right,rgba(51, 255, 0, 0.5), rgba(255, 0, 55, 0));
-  background-image: url(../images/sun.png);
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
-.palm_background {
-  background-image: url(../images/palm-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain, 1500px;
-}
-
-.grass_background {
-  background-image: url(../images/grass-left.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 1000px;
-}
-.lu-seal_background {
-  background-color:powderblue;
-  background-image: linear-gradient(to top right,rgba(17, 0, 255, 0.5), #5eff00ec);
-  background-image: url(../images/beach-ball.png), url(../images/palm-2.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 700px;
+  background-color: darkgray;
+  background-image: linear-gradient(to top right,rgba(255, 0, 0, 0.5), rgba(255, 0, 55, 0));
+  background-image: url(../images/grass-clump.png),
+                    url(../images/sun.png),
+                    url(../images/grass-left.png);
+  background-position: bottom 70px right 100px, top , bottom 70px right 100px, bottom 70px right 100px;
+  background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
+  background-size: 800px, 300px, 2500px;
 }
 
 .lu-seal_background {
   background-color:powderblue;
   background-image: linear-gradient(to top right,rgba(17, 0, 255, 0.5), #5eff00ec);
-  background-image: url(../images/palm-2.png);
-  background-position: bottom;
+  background-image: url(../images/palm-2.png),
+                    url(../images/palm-2.png),
+                    url(../images/beach-ball.png);
+  background-position: bottom left, bottom right;
   background-repeat: no-repeat;
-  background-size: 700px;
+  background-size: 700px, 700px, 300px;
+}
