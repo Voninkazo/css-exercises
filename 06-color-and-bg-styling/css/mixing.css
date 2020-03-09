@@ -1,25 +1,56 @@
 @charset "HTF-8";
 
 .dory_background {
-  background-color: aqua;
-  background-image: linear-gradient(to bottom,rgba(255,55,0,0.5), rgba(0,0,255,0.5));
-  background-image: url(../images/bubble.png),
-                    url(../images/coral-reef.png),
-                    url(../images/crab.png);
-  background-position: center, bottom, left;
-  background-repeat: round, no-repeat, no-repeat;
-  background-size: 500px, 800px, 500px;
+  background-color: gainsboro;
+  background-image:  url(../images/coral-reef.png),
+                   linear-gradient(180deg,
+                   lightblue 0%,
+                   lightblue 10%,
+                   darkblue 10%,
+                   darkblue 70%,
+                   lightyellow 70%,
+                   lightyellow 100%);
+  background-position: center left,
+                       0 0;
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-size: 1000px,
+                   100% 100%;
 }
 
+div#reef_1 {
+  background-image: url(../images/coral-reef.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+
+
 .henry_background {
-  background-color: darkgray;
-  background-image: linear-gradient(to top right,rgba(255, 0, 0, 0.5), rgba(255, 0, 55, 0));
   background-image: url(../images/grass-clump.png),
                     url(../images/sun.png),
-                    url(../images/grass-left.png);
-  background-position: bottom 70px right 100px, top , bottom 70px right 100px, bottom 70px right 100px;
-  background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
-  background-size: 800px, 300px, 2500px;
+                    linear-gradient(180deg,
+                    lightblue 0,
+                    lightblue 40%,
+                    lightyellow 40%,
+                    lightyellow 100%);
+  background-position: center,
+                      top left,
+                      0 0;
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat;
+  background-size: 500px,
+                   100px,
+                   100% 100%;
+  background-color: ivory;
+}
+
+div#grass {
+  background-image: url(../images/grass-clump.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 300px;
 }
 
 .lu-seal_background {
