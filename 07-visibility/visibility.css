@@ -5,7 +5,31 @@
 */
   /* Property example with a value */
 }
+/*
+Opacity
+It shows the degree of a hidden content inside an element.
+*/
+.opacity {
+  opacity: 0.33;
+}
 
+/*
+Display
+It sets if an element is treated as a block or inline element
+none:turns off the display of an element so that it has no effect on layout.
+block:generates line breaks before and after the element when in the normal flow.
+inline: it doesn't generate any line breaks, but the next element will be on the same line if there is a space.
+*/
+.display {
+  display: none;
+}
+/*
+Visisbility
+It shows or hie the elemtn without changing the layout of a document. It also can hide rows and columns in a table.
+*/
+.visisbility {
+  visibility: hidden;
+}
 /*
   Questions
   =======================
@@ -15,4 +39,14 @@
   - Why would we use `visibility: visible;`?
 
 */
-
+/*
+Opacity applies to a whole element, its contents,even though the value is not inheritated by the children.
+Semi-transparent background-color oly applies once.
+*/
+/*
+display:none doesn't affect the layout when it turns off the element.
+visibility: hidden the element is invisible, but still affects the layout as a normal.
+*/
+/*
+We use `visibility:visible` to show a content of an element.
+*/
