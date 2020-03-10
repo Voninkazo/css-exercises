@@ -1,0 +1,16 @@
+nav a {
+  visibility: hidden;
+}
+[data-bg-color="yellow"] {
+  display: none;
+}
+[data-bg-color="blue"] {
+  display: none;
+}
+tr:nth-of-type(2) {
+  display: none ;
+}
+
+span {
+  opacity: 0.5;
+}

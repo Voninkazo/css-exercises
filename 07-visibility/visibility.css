@@ -25,7 +25,7 @@ inline: it doesn't generate any line breaks, but the next element will be on the
 }
 /*
 Visisbility
-It shows or hie the elemtn without changing the layout of a document. It also can hide rows and columns in a table.
+It shows or hides an element without changing the layout of a document. It also can hide rows and columns in a table.
 */
 .visisbility {
   visibility: hidden;
