@@ -1,5 +1,8 @@
-nav a {
+nav li {
   visibility: hidden;
+}
+nav li:first-child {
+  visibility: visible;
 }
 [data-bg-color="yellow"] {
   display: none;
@@ -7,10 +10,12 @@ nav a {
 [data-bg-color="blue"] {
   display: none;
 }
+td span,
 tr:nth-of-type(2) {
   display: none ;
 }
 
-span {
+
+div span {
   opacity: 0.5;
 }
