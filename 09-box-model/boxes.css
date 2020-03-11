@@ -5,3 +5,62 @@
   */
     /* Property example with a value */
   }
+html {
+  justify-content: center;
+  height: 90%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+div {
+  padding: 40px;
+  width: 50px 100px 50px 100px;
+  border-style: groove red ;
+  margin: auto;
+  content: icon;
+}
+  /*Content-box
+  It gives the element's content box a same size as the element's. But the width of the padding and border must increase.
+  */
+  .content-box {
+    box-sizing: content-box;
+  }
+  /*Border-box
+  Border-box shws that the element's width is the total of the width of the padding, the border, and the content. It does the same thing on the height.
+  */
+  .border-box {
+    box-sizing: border-box;
+    width: 30%;
+  }
+
+  /*Padding-box
+
+  */
+  #padding-box {
+    box-sizing: padding-box;
+  }
+
+
+  /*Border
+  It styles the element's border by using width, style, and color.
+  */
+div {
+    border-style: dotted;
+    border-color: red;
+    border-width: 80%;
+}
+
+/*Margin
+It sets the size of the four sides of an element.
+*/
+div.border-box {
+  margin: 40% 50% 40% 50%;
+  border-style: groove;
+  border-color: yellow;
+}
+
+/*Padding
+It shwos how the element's content filled in the padding area.
+*/
+
+
