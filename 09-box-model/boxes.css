@@ -6,37 +6,42 @@
     /* Property example with a value */
   }
 html {
-  justify-content: center;
-  height: 90%;
+  justify-content: top;
+  height: 100%;
   align-items: center;
   flex-direction: column;
   display: flex;
 }
-div {
+main div {
   padding: 40px;
   width: 50px 100px 50px 100px;
-  border-style: groove red ;
   margin: auto;
   content: icon;
+  border-style: groove;
+  border-color: red;
+  border: 40%;
 }
+
+
   /*Content-box
   It gives the element's content box a same size as the element's. But the width of the padding and border must increase.
   */
+
   .content-box {
     box-sizing: content-box;
   }
   /*Border-box
   Border-box shws that the element's width is the total of the width of the padding, the border, and the content. It does the same thing on the height.
   */
-  .border-box {
+  .border-box value {
     box-sizing: border-box;
     width: 30%;
   }
 
   /*Padding-box
-
+It defines the value of the padding area at the bottom or top. It directly wraps the content of the box.
   */
-  #padding-box {
+  .padding-box value {
     box-sizing: padding-box;
   }
 
@@ -44,16 +49,14 @@ div {
   /*Border
   It styles the element's border by using width, style, and color.
   */
-div {
-    border-style: dotted;
-    border-color: red;
-    border-width: 80%;
-}
+  .border {
+    border: solid;
+  }
 
 /*Margin
-It sets the size of the four sides of an element.
+It is an invisible line that take one of the keywords like auto which makes the element in the center. It also sets the size of the four sides of an element.
 */
-div.border-box {
+.margin {
   margin: 40% 50% 40% 50%;
   border-style: groove;
   border-color: yellow;
@@ -62,5 +65,39 @@ div.border-box {
 /*Padding
 It shwos how the element's content filled in the padding area.
 */
+.padding {
+  padding: 20px ;
+}
+
+/* Display
+It sets the display types whether an inline or block.
+*/
+
+.display {
+  display: flex;
+}
+
+/*
+Box-sizing
+This gives the total width and height of an element.
+*/
+
+.box-sizing{
+  box-sizing: border-box;
+}
+
+/*
+What happens when two differently sized margins of two different boxes collide?
+Maybe, the elements will be nested inside of each other and they will be together.
+They also collaps and the margin which has the biggest size takes the real size of the gaps between them.
+
+What is the formula for working out an element's visual width? How is this different when using box-sizing: border-box; on the element?
+we add the size of the content with the padding and the border with the height or width.
 
 
+What is the difference between display values inline, inline-block, and block?
+inline:it does not create any new lines befre or after but will be in the same line.
+block: can create a new line before and after themselves.
+iline-block: it uses a line height and font-size as a default.
+
+*/
