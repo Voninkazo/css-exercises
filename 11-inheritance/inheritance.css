@@ -1,0 +1,57 @@
+@charset "HTF-8";
+/*What do we mean by CSS inheritance? What does it affect?
+CSS inheritance is the way all elements inherit the values of the parents element. This term avoids writing the same values for different elements. And it could apply to any css properties.
+
+
+Which properties have values that are inherited by default?
+azimuth
+border-collapse
+border-spacing
+caption-side
+color
+cursor
+direction
+elevation
+empty-cells
+font-family
+font-size
+font-style
+font-variant
+font-weight
+font
+letter-spacing
+line-height
+list-style-image
+list-style-position
+list-style-type
+list-style
+orphans
+pitch-range
+pitch
+quotes
+richness
+speak-header
+speak-numeral
+speak-punctuation
+speak
+speech-rate
+stress
+text-align
+text-indent
+text-transform
+visibility
+voice-family
+volume
+white-space
+widows
+word-spacing
+
+
+
+What is the difference between the currentColor and inherit keywords when used with colour values?
+
+
+
+What do the revert, initial, and unset keyword values do?
+Are there any dangers or unintended side-effects when using inherit as a value? What about the revert, initial and unset properties?
+What are the possibilities with using an ancestor or universal selector, combined with the inherit value?
