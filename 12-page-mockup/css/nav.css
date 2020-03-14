@@ -1,0 +1,6 @@
+nav a {
+  position: top right;
+  text-align: right;
+  word-spacing: 0.5rem;
+  flex-direction: column-reverse;
+}

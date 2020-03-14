@@ -1,0 +1,10 @@
+#link {
+  display: inline-block;
+  margin-left: 40rem;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  width: 150px;
+  height: 20px;
+  margin-bottom: 1rem;
+}

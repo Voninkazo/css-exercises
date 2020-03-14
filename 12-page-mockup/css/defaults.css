@@ -1,0 +1,26 @@
+body {
+  margin: 2rem;
+  border: solid 1px;
+  width: 900px;
+  height:1000px;
+  box-sizing: content-box;
+}
+header {
+  height: 350px;
+  background-size: 100%;
+  background-image: url(../images/bg_desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: 1px;
+  border: solid 1px;
+  color: white;
+}
+main {
+  text-align: center;
+  border: solid 0.5px;
+}
+ footer {
+   margin-top: 8rem;
+   margin-bottom: 3rem;
+   text-align: center;
+   margin-right: 20rem;
+ }

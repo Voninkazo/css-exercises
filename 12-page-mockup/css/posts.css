@@ -1,0 +1,20 @@
+ol li {
+  font-size: 1.5rem;
+  text-align: start;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  list-style-type: none;
+  line-height: 1;
+}
+.border {
+  border-bottom: solid 0.5px;
+}
+
+p#small {
+  font-weight: lighter;
+  font-size: normal;
+  font-family: initial;
+}
+p > i {
+  font-size: 1rem;
+}

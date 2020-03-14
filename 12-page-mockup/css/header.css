@@ -1,0 +1,25 @@
+
+header a {
+  color: white;
+}
+h1 {
+   margin-left: 1rem;
+   font-size: 1rem;
+ }
+
+div {
+  text-align: right;
+  word-spacing: 0.5rem;
+  margin-right: 1em;
+  margin-top: -2em;
+}
+
+h2#lost {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+#journal {
+  text-align: center;
+  font-weight: lighter;
+}
