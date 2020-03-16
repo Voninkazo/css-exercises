@@ -1,20 +1,22 @@
-ol li {
-  font-size: 1.5rem;
-  text-align: start;
-  margin-left: 12rem;
-  margin-right: 12rem;
-  list-style-type: none;
-  line-height: 1;
+#li {
+  margin-left: 50rem;
+  margin-right: 50rem;
+  display: block;
 }
+
 .border {
   border-bottom: solid 0.5px;
+  font-style: italic;
+  font-size: 1rem;
+  display: block;
+}
+.jesse {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 p#small {
   font-weight: lighter;
   font-size: normal;
-  font-family: initial;
-}
-p > i {
-  font-size: 1rem;
+  font-family: initial;;
 }

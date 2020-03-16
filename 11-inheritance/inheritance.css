@@ -49,9 +49,17 @@ word-spacing
 
 
 What is the difference between the currentColor and inherit keywords when used with colour values?
-
+"CurrentColor is used to make a certain color consistetn in an element.
+or example, if you want an element to have a border color that’s the same as the element’s text color, using currentColor makes a lot of sense because then if you decide the main text color you can change the value at only one place." Sorce:web alligator.io
+Inherit keywords causes the element for which it is specified to take the computed value of the property from its parent element  Source:MDN
 
 
 What do the revert, initial, and unset keyword values do?
+The `revert` keyword value changes the cascaded value of the property to its current value if there had been no changes.
+The `initial` keyword value applies the default value in an element. It is set by the browser.
+The `unset` keyword value resets a property to its inherited value if it inherits the parent, but if not it would set its initial value.
+
 Are there any dangers or unintended side-effects when using inherit as a value? What about the revert, initial and unset properties?
+
 What are the possibilities with using an ancestor or universal selector, combined with the inherit value?
+*/

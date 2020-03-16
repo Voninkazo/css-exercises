@@ -1,22 +1,29 @@
 
-header a {
+body header{
+  color: white;
+  text-decoration: none;
+  background-size: contain;
+}
+body > header {
+  height: 350px;
+  background-size: 100%;
+  background-image: url(../images/bg_desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: 1px;
+  border: solid 1px;
   color: white;
 }
-h1 {
+
+header > h1 {
    margin-left: 1rem;
    font-size: 1rem;
+   color: white;
+   display: block;
  }
 
-div {
-  text-align: right;
-  word-spacing: 0.5rem;
-  margin-right: 1em;
-  margin-top: -2em;
-}
-
-h2#lost {
+#lost {
   text-align: center;
-  margin-top: 6rem;
+  font-size: 2rem;
 }
 
 #journal {

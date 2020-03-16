@@ -1,6 +1,20 @@
-nav a {
-  position: top right;
+nav > ul > li {
   text-align: right;
-  word-spacing: 0.5rem;
-  flex-direction: column-reverse;
+  text-decoration: none;
+  display: inline-block;
+}
+a.link {
+  color: white;
+  text-decoration: none;
+  color: white;
+  background-size: contain;
+  display: inline;
+  margin: 0.5rem;
+}
+
+#nav {
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 0rem;
+  margin-bottom: -2rem;
 }

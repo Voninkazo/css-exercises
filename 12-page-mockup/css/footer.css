@@ -1,4 +1,32 @@
+/*
+  Let the element manage the spacing.
+  We'll be using `dispay:inline*` for all descendents
+  so that we can use `text-align`.
+*/
 footer {
   text-align: center;
-  list-style-type: none;
+  display: block;
+  margin-top: 2rem;
+}
+/*
+  Let's use a special property to get ride of the list style on the `ul`.
+*/
+footer ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+/*We will use a complex selector to controle the spaces between the `li`.
+*/
+footer li:first-child {
+  margin-inline-start: 0;
+}
+footer li:last-child {
+  margin-inline-end: 0;
 }
