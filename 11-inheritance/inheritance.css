@@ -55,11 +55,13 @@ Inherit keywords causes the element for which it is specified to take the comput
 
 
 What do the revert, initial, and unset keyword values do?
-The `revert` keyword value changes the cascaded value of the property to its current value if there had been no changes.
+The `revert` keyword value changes the cascaded value of the property to its current value if there had been no changes. To be more clearer, it goes back to the inherited value.
 The `initial` keyword value applies the default value in an element. It is set by the browser.
 The `unset` keyword value resets a property to its inherited value if it inherits the parent, but if not it would set its initial value.
 
 Are there any dangers or unintended side-effects when using inherit as a value? What about the revert, initial and unset properties?
+Maybe all of the children might inherit the value which set in the parents if someone else sets another property has an inherited value. Be carelful with theselector when using revert, otherwise all of the elements would loose their own properties.
 
 What are the possibilities with using an ancestor or universal selector, combined with the inherit value?
+
 */
