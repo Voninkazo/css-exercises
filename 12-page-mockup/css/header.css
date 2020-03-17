@@ -14,11 +14,12 @@ body > header {
   color: white;
 }
 
-header > h1 {
+body h1 a {
    margin-left: 1rem;
    font-size: 1rem;
    color: white;
    display: block;
+   text-decoration: none;
  }
 
 #lost {
