@@ -12,7 +12,6 @@ a.link {
 }
 body header nav {
   margin-block-start: -3rem;
-  margin-block-end: 7rem;
-  margin-right: 2rem;
+  margin-block-end: 5rem;
   text-align: right;
 }

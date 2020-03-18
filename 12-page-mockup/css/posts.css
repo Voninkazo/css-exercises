@@ -1,6 +1,6 @@
-main nav {
+#ul {
   list-style: none;
   margin-left: 14rem;
-  text-align: center;
+  margin-right: 14rem;
   display: block;
 }
