@@ -1,3 +1,7 @@
+html {
+  display: block;
+  width: 1000px;
+}
 body {
   margin: 2rem;
   border: solid 1px;
@@ -8,5 +12,6 @@ body {
 
 main {
   border: 1px solid;
+  display: block;
 }
 

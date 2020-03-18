@@ -1,0 +1,68 @@
+  /*
+  Pseudo-elements
+  Do you know what that special property is?
+  That is the `content` property.
+
+  What functions can we use in that property's value?
+
+  What are the various pseudo-elements?
+  ::after (:after)
+  ::backdrop
+  ::before (:before)
+  ::cue
+  ::cue-region
+  ::first-letter (:first-letter)
+  ::first-line (:first-line)
+  ::grammar-error
+  ::marker
+  ::part()
+  ::placeholder
+  ::selection
+  ::slotted()
+  ::spelling-error
+
+  Why would we use pseudo-elements?
+  We use pseudo-elements to select a very specific element inside a parent element. For example, the first chid in a paragraph or list.
+  */
+  /*
+  Counters
+  Some generated content can include counters.
+  How do we count in CSS - i.e. what declaration do we use?
+  To use a CSS counter, it must first be initialized to a value with the counter-reset property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
+
+  How do we reset a counter?
+  To reset a counter, we have to use a `counter-reset` property. There are three types of keyword values that can be with this property: none, negative values like -5, positive values like -5.
+
+  What are counters useful for?
+  We can use counters to count how many times some valuse are used.
+  It is also used to number the headings in webpages.
+    */
+  /*
+  Lists
+  Name as many properties as you can that are only related to lists
+  padding
+  list-style-type
+  background
+  list-style
+  margin
+  list-style-position
+  list-style-image
+  list-height-step
+  color
+  display
+  content
+  text-decoration
+  margin-block-start
+  margin-block-end
+  text-align
+  background-size
+
+  What types of bullet styles are there?
+  circle
+  disc
+  square
+
+  Can any group of elements be styled to look like a list?
+  Yes, for exapmle, these elements below can be styled like a list:
+
+  */

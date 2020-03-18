@@ -1,6 +1,10 @@
-#ul {
+main nav a {
+  display: inline-block;
+  text-align: center;
   list-style: none;
-  margin-left: 14rem;
-  margin-right: 14rem;
+}
+
+.border {
+  text-align: center;
   display: block;
 }
