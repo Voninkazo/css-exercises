@@ -1,0 +1,69 @@
+  /*
+  Table-layout
+  The default value of the `table-layout` property is the `auto` value. It grows the cells to fit the content properly.
+
+  Border-spacing
+  The `border-spacing` property sets the spaces between the tables'border and the cells int the first or the last row/column. The default value is
+
+  Border-collapse
+  This is a property that defines wether the cell in a table has its own borders or they are gathered in the same borders.
+
+  Caption-side
+  This puts the caption of a content in a specified place in a table. That can above or below the table.
+
+  Empty-cells
+  The `empty cells` property controles the borders and the bcackgrounds of cells that have invisible content in to appear or not. This only works when the border-collapse is separate.
+    */
+
+  /*
+  Simulating HTML tables
+  Table
+    This value corresponds to table elements. It defines a block-level box.
+  Table-row-group
+    This behaves like a <td> HTML element.
+  Table-header-group
+    It corresponds to <thead> HTML element.
+  Table-footer-group
+    It corresponds to <tfoot> HTML element.
+  Table-row
+    Table row is the correspondance of the <tr> element.
+  Table-cell
+    These elements behave like a <td>.
+  Table-column-group
+    These elemets correspond to the <colgroup> in HTML.
+  Table-column
+    These correspond to the <col> HTML element.
+  Table-caption
+    These elements behave like <caption>.
+*/
+  /*
+   Further research
+See if you can answer the following questions:
+
+What other declaration does border-spacing require before it can work effectively?
+This only works when the border-collaps is separate.
+
+What are the downsides of using the various table* values for display on a set of elements, thereby
+simulating a table layout on non-table elements?
+
+What is the difference between:
+table-layout: fixed: we have to set the width, otherwise it will not work properly.
+table-layout: auto:it automatically sets the width of the table even if we do not put width.
+
+Can you use border-spacing and other table-like properties on non-table elements?
+
+What other declaration does empty-cells require before it can work effectively?
+This require the same condition as the border-spacing as it has to be with a separate border-collaps.
+  */
+  /*
+table {
+  table-layout: auto;
+  width: 10%;
+  border: 2px solid;
+  caption-side: bottom;
+  empty-cells: hide;
+  border-collapse: separate;
+}
+tr.tr {
+  visibility: hidden;
+}
