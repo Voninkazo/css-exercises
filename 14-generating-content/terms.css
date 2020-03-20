@@ -73,11 +73,13 @@ li {
 header h4 {
   font-size: 2rem;
 }
-section > ol > li::before {
-  content: counter(subsection) "."
-          counter();
-  list-style-type: lower-latin;
-}
+/*
 ol {
-  counter-increment: li;
+  counter-reset: li;
+}
+ol > li::before {
+  counter-increment: subsection;
+  content: counter(subsection) "."
+           counter(li);
+  list-style: lower-latin;
 }

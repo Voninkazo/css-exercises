@@ -1,9 +1,29 @@
 /* Styles for all mediums go here */
-@media all {
+@media screen {
+abbr::after {
+  content: "["attr(title)"]";
+  word-wrap: break-word;
+ }
 
+blockqoute::after {
+  content: "["attr(cite)"]";
+  word-wrap: break-word;
 }
+
+time::after {
+  content: "["attr(datetime)"]";
+  word-wrap: break-word;
+}
+a::after {
+  content: "["attr(href)"]";
+  word-wrap: break-word;
+}
+img::after {
+  content: "["attr(href)"]";
+}
+}
+
 
 /* Only styles for printers please */
 @media print {
-
 }
