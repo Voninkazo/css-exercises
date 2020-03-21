@@ -1,0 +1,28 @@
+html {
+  width: 800px;
+}
+main {
+width: 80%;
+table-layout: auto;
+border: 1px solid;
+border-collapse: separate;
+}
+h1 {
+  padding-left: 0rem;
+}
+section h2 {
+  position: absolute;
+  padding-block-start: 1.5rem;
+  vertical-align: middle;
+  table-layout: fixed;
+  padding-left: 6rem;
+}
+
+section p {
+  padding-left: 14rem;
+  word-wrap: break-word;
+  line-height: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 1rem;
+}
