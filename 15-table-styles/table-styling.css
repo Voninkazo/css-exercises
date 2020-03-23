@@ -6,13 +6,15 @@
   The `border-spacing` property sets the spaces between the tables'border and the cells int the first or the last row/column. The default value is
 
   Border-collapse
-  This is a property that defines wether the cell in a table has its own borders or they are gathered in the same borders.
+  This is a property that defines wether the cell in a table has its own borders or they are gathered in the same borders. The default value is `collapse`.
 
   Caption-side
   This puts the caption of a content in a specified place in a table. That can above or below the table.
+  The defaut is `top`.
 
   Empty-cells
   The `empty cells` property controles the borders and the bcackgrounds of cells that have invisible content in to appear or not. This only works when the border-collapse is separate.
+  The defaults are `hide` and `show`
     */
 
   /*
@@ -41,10 +43,11 @@
 See if you can answer the following questions:
 
 What other declaration does border-spacing require before it can work effectively?
-This only works when the border-collaps is separate.
+This only works when the border-collapse is separate.
 
 What are the downsides of using the various table* values for display on a set of elements, thereby
 simulating a table layout on non-table elements?
+If you use a tabular html, you cannot use that in css. Also we do not have any acces to create what we want in html.
 
 What is the difference between:
 table-layout: fixed: we have to set the width, otherwise it will not work properly.

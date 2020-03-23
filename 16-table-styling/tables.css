@@ -1,28 +1,21 @@
-html {
-  width: 800px;
-}
-main {
-width: 80%;
+
+body {
+width: 600px;
 table-layout: auto;
 border: 1px solid;
-border-collapse: separate;
-}
-h1 {
-  padding-left: 0rem;
-}
-section h2 {
-  position: absolute;
-  padding-block-start: 1.5rem;
-  vertical-align: middle;
-  table-layout: fixed;
-  padding-left: 6rem;
+display: table;
 }
 
-section p {
-  padding-left: 14rem;
-  word-wrap: break-word;
-  line-height: 1.5rem;
-  display: table-cell;
+h2 {
   vertical-align: middle;
+  padding-left: 20px;
+  display: table-cell;
+}
+
+section {
+  padding-left: 14rem;
   padding-bottom: 1rem;
+  display: table;
+  table-layout: auto;
+  border-spacing: 10px;
 }
