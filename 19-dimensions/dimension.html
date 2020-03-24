@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width & Height</title>
+  <style>
+ /*
+  What are the default values for these properties?
+width:The default value is `auto`
+height:
+  min-width:none
+  max-width:none
+  min-height:none
+  max-height:none
+  Do these default values change if the element is a block-like or an inline-like element?
+
+  What happens if a min-width value is greater than a width value?
+    The width does not affect any element rather than the min-width.
+  Similarly, what happens if a max-width value is less than a width value?
+    It is still the same as the min-width, it only applies the max-width.
+  Similarly, what happens if a min-width value is greater than a max-width value?
+  Only the min-width applies the value to the element.
+  What happens when widths are applied to table cells, and the content inside these cells doesn't fit?
+
+  What's the deal with height and percentage values? Percent of what!?
+  */
+  article#max.width .example {
+    width: 10rem;
+    max-width: 5rem;
+  }
+  article#min.height .example {
+    max-width: 40rem;
+    min-width: 60rem;
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Width & Height
+      </h1>
+    </header>
+    <main>
+      <article class="width" id="max">
+      <header>
+        <h2>
+          Width
+        </h2>
+      </header>
+      <p class="example">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quisquam aliquid voluptate itaque delectus ab, dolorum sit amet velit provident alias illum aut asperiores a nemo. Incidunt corporis aliquam natus.
+      </p>
+      </article>
+      <article class="height" id="min">
+        <header>
+          <h2>
+            Height
+          </h2>
+        </header>
+        <p class="example">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam unde, omnis, at mollitia qui aliquid eum ipsum aliquam eaque ut deleniti accusamus nobis dolor a voluptatum suscipit doloremque. Sed.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
