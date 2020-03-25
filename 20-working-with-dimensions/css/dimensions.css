@@ -1,0 +1,17 @@
+/* Let's set a max-width property to make the images fit in. We have to set the height by default to make evry image behaves properly. */
+section div.example [src="../06-color-and-bg-styling/images/big-bird.png"] {
+  max-width: 100%;
+  height: auto;
+}
+section div.table_container {
+  overflow: auto;
+}
+table {
+  max-width: 310px;
+}
+svg {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+
