@@ -1,0 +1,21 @@
+.icon_left::before {
+  background-image: url(../css/icon-facebook.png);
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.icon_right::after {
+  background-image: url(../css/icon-facebook.png);
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
