@@ -1,0 +1,52 @@
+.container {
+  width: 600px;
+  margin: 100px auto;
+}
+.progress_indicator {
+  counter-reset: step;
+}
+/* Let's style the list and create a arrow pointer that can help the user to see  */
+.progress_indicator li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  font-weight: bolder;
+}
+/*  */
+.progress_indicator li:before {
+  width: 30px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.progress_indicator li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progress_indicator li:first-child:after {
+  content: none;
+}
+.progress_indicator span.a11y:before {
+  border-color: darkgray;
+}
+.progress_indicator span.a11y + span:after {
+  background-color: darkgray;
+}
