@@ -1,0 +1,34 @@
+
+section:nth-of-type(3) .example {
+  width: 200px;
+  height: 200px;
+}
+section:nth-of-type(3) .example .circle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+
+section:nth-of-type(3) .example .rect {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  top: -148px;
+  left: 48px;
+}
+section:nth-of-type(3) .example .pipe {
+  position: relative;
+  height: 7%;
+  width: 50%;
+  left: 48px;
+  top: -252px;
+}
+section:nth-of-type(3) .example .bar {
+  position: relative;
+  width: 50%;
+  height: 7%;
+  left: 49px;
+  bottom: 357px;
+}
