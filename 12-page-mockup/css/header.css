@@ -29,3 +29,25 @@ body h1 a {
   text-align: center;
   font-weight: lighter;
 }
+/*
+body header {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+body header h1 {
+  margin: 0;
+  font: 2rem;
+}
+body header a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width:104px) {
+  body header {
+    left: 50%;
+    margin-left: -50rem;
+  }
+}
+@media (max-width: 56.32px)
+*/

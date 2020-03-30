@@ -12,7 +12,7 @@ What are some of the other properties you need to supply when using any non-defa
 These are the properties:display and line-height.
 
 What is the inferred display value of an element that has been positioned?
-
+`display:block`
 One of the non-default values for position still maintains a box in the flow of the document. Which one is it?
 
 What is special or significant about fixed and sticky positioning?
