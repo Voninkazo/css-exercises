@@ -1,11 +1,13 @@
-.container {
+/*.container {
   width: 600px;
   margin: 100px auto;
 }
 .progress_indicator {
   counter-reset: step;
 }
+*/
 /* Let's style the list and create a arrow pointer that can help the user to see  */
+/*
 .progress_indicator li {
   list-style-type: none;
   width: 25%;
@@ -17,7 +19,7 @@
   color: #7d7d7d;
   font-weight: bolder;
 }
-/*  */
+
 .progress_indicator li:before {
   width: 30px;
   height: 30px;
@@ -49,4 +51,71 @@
 }
 .progress_indicator span.a11y + span:after {
   background-color: darkgray;
+}
+*/
+.a11y {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.progress_indicator {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.progress_indicator li > * {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  padding-inline-start: 3rem;
+  position: relative;
+}
+.progress_indicator li > *::before {
+  content: counter(step_number);
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.5rem;
+  border-radius: 50%;
+}
+.progress_indicator a::before {
+  background-color: green;
+  color: #ffff;
+}
+.progress_indicator::after {
+  content: "";
+  width: 0.25rem;
+  position: absolute;
+  top: 1rem;
+  left: 1.75rem;
+  margin-inline-start: -0.125rem;
+  bottom: 1rem;
+  background-color: #ccc;
+  z-index: -1;
+}
+.progress_indicator li {
+  counter-increment: step_number;
+}
+/*Set bank links, or previous steps*/
+.progress_indicator a {
+  text-decoration: none;
+}
+/*current step*/
+.progress_indicator b::before {
+  background-color: yellow;
+  color: white;
+}
+/* Future step */
+.progress_indicator span {
+  opacity: 0.75;
+}
+.progress_indicator span::before {
+  background-color: red;
 }
