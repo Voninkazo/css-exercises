@@ -1,0 +1,36 @@
+/* What are their default values?
+float: none;
+clear: none;
+
+What are the possible values for clear?
+float: left, right, none;
+clear: left, right, none, both;
+
+What is the rule associated with a floated item in terms of source order?
+Do not use a position property when using a clear property.
+The floattted elementts must go before any elements that will float over.
+
+Can you float other elements besides images?
+Yes we can use ilnine-block elements and block elements.
+
+Is there a way to create a two-column layout with floats?
+Yes we can by using pseudo elements with these following properties and their values:
+content: "";
+clear: both;
+display: table;
+*/
+/*
+BFC (Block formatting context)
+Describe in your own words what BFC is all about.
+This is used with a float and a clear property that only affects any elements that have the same block formatting context as these properties have.
+It sets of rules for the container contain its contentes.
+
+We can 'clear' a float by creating a block formatting context on the parent, this
+is achieved by putting a certain set of properties on the container.
+ What are those properties?
+ display(table cells),
+ position,
+ overflow,
+
+Will you forget about Block Formatting Contexts tomorrow? :P
+*/
