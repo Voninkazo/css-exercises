@@ -78,12 +78,13 @@
 .progress_indicator li > *::before {
   content: counter(step_number);
   position: absolute;
-  left: 1.25rem;
+  left: 1rem;
   top: 50%;
   width: 1.5rem;
   height: 1.5rem;
   margin-top: -0.5rem;
   border-radius: 50%;
+  text-align: center;
 }
 .progress_indicator a::before {
   background-color: green;
