@@ -1,0 +1,13 @@
+section:first-of-type div.container img[src="images/inspector_gadget.jpg"] {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+section:first-of-type div.container img[src="images/doctor_claw.png"] {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+section:first-of-type div p:nth-of-type(2) {
+  clear: left;
+}
