@@ -1,0 +1,27 @@
+
+/*
+What is the order of property values in the shorthand flex property? i.e. Given… flex: 2 1 auto, what does the 2, 1 and auto represent?
+-2 represents the flex-grow,
+-1 represents the flex-shrink and
+-auto represents the flex-basis.
+
+What flex-wrap or flex-flow values do we need before we can use align-content?
+flex-wrap:wrap flex-flow:
+flex-flow:wrap
+
+How is align-content different to align-items?
+The `align-content` property manages the sapce between a wrapping `flex-content`.
+But the `align-items` controls the alignment of the the items in the Cross axis.
+
+Which property overrides the other - the container's align-items or the flex item's align-self?
+It is the `justify-content` property.
+
+What other commonly-used box model property is similar to flex-basis?
+It is the `box-sizing` property
+There are two ways to change the ordering of flex items within a flex container. One is done on each flex item by using the order property. The other can change the whole order of the flex items at the container level. What is that property or value?
+flex-direction:columns/row-reverse;
+
+Let's say we wanted some space between each of our three flex items in a flex column. Name at least two possible ways to achieve this.
+We can use the align-content to create space between each item
+Also we can use justify-content with the `space-between` value that creates space on the right and left of the items.
+*/
