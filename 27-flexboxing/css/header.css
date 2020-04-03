@@ -2,6 +2,7 @@ body > header {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 body > header h1 {
