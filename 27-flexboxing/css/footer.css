@@ -6,4 +6,6 @@ footer ul {
 
 footer p {
   color: #999;
+  display: flex;
+  justify-content: center;
 }

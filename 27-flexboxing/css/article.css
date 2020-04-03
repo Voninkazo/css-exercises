@@ -1,3 +1,8 @@
 article {
   max-width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  margin-inline-start: 15rem;
 }

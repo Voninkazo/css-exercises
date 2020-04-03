@@ -1,10 +1,14 @@
 body > header {
   color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 body > header h1 {
   margin: 0;
   font-size: 2rem;
+  margin-inline-start: 1rem;
+  margin-block-start: 1rem;
 }
 
 body > header a {

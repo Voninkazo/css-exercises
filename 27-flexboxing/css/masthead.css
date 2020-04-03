@@ -17,8 +17,18 @@ main > header {
 main > header > h2 {
   font-size: 4rem;
   margin: 0;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-block-start: 3rem;
 }
 
 main > header > p {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body main {
+  margin-top: -8rem;
 }
