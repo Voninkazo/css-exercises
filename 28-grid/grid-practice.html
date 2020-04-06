@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lost in Madagascar</title>
+  <style>
+    /*
+    QUESTIONS
+    How many columns does a grid have by default?
+    By default grid only have one column.
+
+    What are the differences between Flexbox and Grid?
+    Flexbox can wrap if we wnat by using the flex-wrap property even if the sapce is still enough for the item, but in grid, you have to allow auto fill so that it will fill a row and move to a new row.
+    Also, flebox is mostly applied to the children whereas the grid mostly apply to the parents.
+    Why would you use flexbox rather than grid?
+    It is good to use flexbox when you have a buch of stuff of different sizes.
+
+    Why would you use grid rather than flexbox?
+    Because grid can create columns and rows in places where you want it to be, but flexbox cannot do that.
+
+    What's a more concise way to write out the following: grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-columns: 10rem[first] 10rem[main] 10rem[side] 10rem[last]
+
+    How can we specify a minimum height for a grid row, but still allow the row to increase in height if its content is too tall?
+    */
+    section:first-of-type .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      grid-auto-rows: minmax(80px, auto);
+      grid-auto-flow: row;
+    }
+
+    div {
+      font-size: 1.5rem;
+    }
+
+    section:first-of-type .container div:nth-of-type(5) {
+      background-color: red;
+      grid-area: b;
+    }
+
+    section:first-of-type .container>div {
+      background-color: aqua;
+      border: solid 1px;
+      grid-column-start: span 1;
+    }
+
+    section:first-of-type div.one {
+      grid-column: 1 / 2;
+      grid-row: 1;
+      grid-area: 1/ 2 / 2 / 2;
+    }
+
+    section:first-of-type div.two {
+      grid-column: 2 / 2;
+      grid-row: 1 / 3;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Grid</h1>
+  </header>
+  <main>
+      <div class="container">
+        <div class="one">
+          Item 1
+        </div>
+        <div class="two">
+          Item 2
+        </div>
+        <div class="three">
+          Item 3
+        </div>
+        <div class="four">
+          Item 4
+        </div>
+        <div class="five">
+          Item 5
+        </div>
+        <div class="six">
+          Item 6
+        </div>
+        <div class="seven">
+          Item 7
+        </div>
+        <div class="eight">
+          Item 8
+        </div>
+        <div class="nine">
+          Item 9
+        </div>
+        <div class="ten">
+          Item 10
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
