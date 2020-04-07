@@ -1,5 +1,11 @@
 body > header {
-
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+}
+body header nav ul {
+  grid-template-columns: repeat(6, 145px);
+  display: grid;
+  gap: 20px;
 }
 
 body > header h1 {

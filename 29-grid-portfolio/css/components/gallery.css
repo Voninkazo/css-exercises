@@ -6,6 +6,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  row-gap: 30px;
+  column-gap: 15px;
 }
 
 /*
