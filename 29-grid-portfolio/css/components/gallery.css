@@ -11,6 +11,7 @@
   grid-template-columns: repeat(6, 145px);
   row-gap: 30px;
   column-gap: 15px;
+  margin-block-end: 1rem;
 }
 
 /*

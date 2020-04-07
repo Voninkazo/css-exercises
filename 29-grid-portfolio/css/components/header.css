@@ -5,7 +5,7 @@ body > header {
   grid-template-columns: repeat(6, 145px);
   align-items: end;
 }
-body > header nav ul {
+body header nav ul {
   grid-template-columns: repeat(5, 145px);
   display: grid;
   column-gap: 15px;
