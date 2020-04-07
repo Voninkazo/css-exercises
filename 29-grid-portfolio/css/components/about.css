@@ -1,3 +1,21 @@
 .about {
+  display: grid;
+  column-gap: 15px;
+  padding-block-start: 1rem;
+  grid-template-columns: 15% 20% 11% 15%;
+  grid-template-rows: 1fr 1fr;
 
+}
+main.about h2.heading_page {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.about img {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.about div.about_description {
+  grid-column-start: 4;
+  grid-column-end: 7;
 }
