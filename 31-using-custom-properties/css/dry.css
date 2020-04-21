@@ -1,40 +1,46 @@
-
+:root {
+  --base-unit: 10px;
+  --cube-side: calc(2 * var(--base-unit));
+  --transition: color 1s;
+  --color: rgb(63, 63, 63);
+  --whithout-unit: 0;
+  --increment: item;
+  --without-unit-rgb: 0, 0, 0;
+}
 
 #dry .grid {
   display: inline-grid;
-  grid-template-columns: repeat(10, 20px);
+  grid-template-columns: repeat(10, var(--cube-side));
 }
 
 #dry a {
   display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(63, 63, 63);
-  transition: background-color 1s;
-  counter-increment: item;
+  width: var(--cube-side);
+  height: var(--cube-side);
+  background-color: var(--color);
+  transition: var(--transition);
+  counter-increment: var(--increment);
 }
 
 #dry a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(var(--without-unit-rgb));
 }
 
 #dry a::before {
-  content: counter(item);
+  content: counter(var(--increment));
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
+  top: var(--whithout-unit);
+  left: var(--whithout-unit);
+  width: var(--cube-side);
   text-align: center;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: var(--base-unit);
+  line-height: var(--cube-side);
   font-weight: 700;
-  color: rgb(63, 63, 63);
-  transition: color 1s;
+  color: var(--color);
+  transition: var(--transition);
 }
 
 #dry a:hover::before {
   color: rgb(255, 255, 255);
 }
-
-
