@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calc-function</title>
+    <style>
+      /*
+      What values can a calc() function support?
+      It can support a length, frequency, angle, time, percentage, number or integer.
+
+      How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like calc(2 + 3 * 4) doesn't equal 14, when it is instead meant to equal 20?
+      We use parantheses to separate the multiplication which should always be the priority like this: calc(2 + (3 * 4)).
+
+      Can we use a calc() function to convert one type of unit to another type of unit?
+
+      If we want to convert a unitless number to a unit value, what do we have to do?
+      We have to multiple the value the unit, like this:
+      --columns: 2;
+      --base-unit: calc(var(--columns) / 2 * 1rem);
+
+      Why do the plus and minus operators inside the function need spaces around them?
+      Because if that is the case, the values would be negative or positive numbers but there is no any sign of substruction or addition.
+
+      How can we convert a value into a negative value?
+      I think we can multiply the value by -1.
+
+      Can the calc() function work with colour values? e.g. a light red plus a light red should equal a darker red.
+      */
+      :root {
+        --lightgreen: red;
+        --light-red: red;
+        --accessible-color: calc(var(--light-red) + var(--lightgreen));
+      }
+      div {
+        background-color: rgb(var(--lightgreen), var(--light-red));
+        color: rgb(var(--accessible-color), var(--accessible-color), var(--accessible-color));
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+      Hello
+      </p>
+    </div>
+  </body>
+</html>
