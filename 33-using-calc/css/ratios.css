@@ -1,15 +1,19 @@
 #ratio_2_1 {
-  padding-block-start: 50%;
+  padding-block-start: calc((400 / var(--base-width)) * 100%);
 }
 
 #ratio_16_9 {
-  padding-block-start: 56.25%;
+  padding-block-start: calc((450 / var(--base-width)) * 100%);
 }
 
 #ratio_4_3 {
-  padding-block-start: 75%;
+  padding-block-start: calc((600 / var(--base-width)) * 100%);
 }
 
 #ratio_1_1 {
-  padding-block-start: 100%;
+  padding-block-start: calc((var(--base-width) / var(--base-width)) * 100%);
+}
+
+:root {
+  --base-width: 800;
 }

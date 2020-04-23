@@ -7,12 +7,13 @@
     <style>
       /*
       What values can a calc() function support?
-      It can support a length, frequency, angle, time, percentage, number or integer.
+      It can support a length, frequency, angle, time, percentage, number or integer, fraction, keywords.
 
-      How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like calc(2 + 3 * 4) doesn't equal 14, when it is instead meant to equal 20?
-      We use parantheses to separate the multiplication which should always be the priority like this: calc(2 + (3 * 4)).
+      How can we control the mathematical order of operation (PEDMAS / BODMAS) in the function, so that something like calc(2 + 3 * 4) equals 14, when it is instead meant to equal 20?
+      We use parantheses to separate the multiplication which should always be the priority like this: calc(2 + 3) * 4.
 
       Can we use a calc() function to convert one type of unit to another type of unit?
+      We can only convert it with the same unit values.
 
       If we want to convert a unitless number to a unit value, what do we have to do?
       We have to multiple the value the unit, like this:
@@ -26,23 +27,24 @@
       I think we can multiply the value by -1.
 
       Can the calc() function work with colour values? e.g. a light red plus a light red should equal a darker red.
+      No, we can't.
       */
       :root {
         --lightgreen: red;
         --light-red: red;
         --accessible-color: calc(var(--light-red) + var(--lightgreen));
       }
-      div {
+      h1 {
         background-color: rgb(var(--lightgreen), var(--light-red));
         color: rgb(var(--accessible-color), var(--accessible-color), var(--accessible-color));
       }
     </style>
   </head>
   <body>
-    <div>
-      <p>
+    <header>
+      <h1>
       Hello
-      </p>
-    </div>
+      </h1>
+    </header>
   </body>
 </html>
