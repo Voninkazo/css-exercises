@@ -1,10 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
 
-The transition property is a 'shorthand property'. What other properties are included in this shorthand property?
-What is the difference between a timing function, delay, and duration?
-What CSS properties are animatable using transitions?
-Can we select more than one property to transition at a time? If so, how?
-How can we set or define the desired transition state, using CSS?
-Do we need transitions? What makes them useful?
-At what point can transitions become a problem?
-Transitions don't work reliably with the auto keyword being one of the end states. Why is that?
-How can we stagger transitions? i.e. make a number of child elements all start at different times?
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calc</title>
+  <style>
+    body ul li {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    body div > ul {
+      line-height: 3rem;
+    }
+    </style
+</head>
+
+<body>
+  <header>
+    <h1>
+      Transition
+    </h1>
+  </header>
+  <main>
+  <div>
+    <ul>
+      <li>
+        The transition property is a 'shorthand property'. What other properties are included in this shorthand
+        property?
+        <ul>
+          <li>
+            transition-property
+          </li>
+          <li>
+            transition-duration
+          </li>
+          <li>
+            transition-timing-function
+          </li>
+          <li>
+            transition-delay
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        What is the difference between a timing function, delay, and duration?
+        <ul>
+          <li>
+            duration:sets exactly how long the animation should take.
+          </li>
+          <li>
+            timing-function:duration between each element start acting.
+          </li>
+          <li>
+            delay:duration to wait before the animation starts.
+          </li>
+        </ul>
+      </li>
+      <li>
+        What CSS properties are animatable using transitions?
+        These shorthand properties:
+        <ul>
+          <li>
+            backgruond-color
+          </li>
+          <li>
+            color
+          </li>
+          <li>
+            margin
+          </li>
+          <li>
+            border
+          </li>
+          <li>
+            gap
+          </li>
+          <li>
+            fonts
+          </li>
+          <li>
+            width
+          </li>
+          <li>
+            padding
+          </li>
+          <li>
+            scale
+          </li>
+          <li>
+            scroll
+          </li>
+          <li>
+            text
+          </li>
+          <li>
+            transform
+          </li>
+          <li>
+            vertical-align
+          </li>
+          <li>
+            word-spacing
+          </li>
+          <li>
+            z-index
+          </li>
+          <li>
+            zoom
+          </li>
+          <li>
+            top
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Can we select more than one property to transition at a time? If so, how?
+        <ul>
+          <li>
+            Yes, we can select more than one property by using commas between them as the values of the
+            "transition-property".
+          </li>
+          <li>
+            We can also use the "all" keyword to iclude all properties.
+          </li>
+        </ul>
+      </li>
+      <li>
+        How can we set or define the desired transition state, using CSS?
+        <ul>
+          <li>
+            Using pseudo-classes like :
+            <ul>
+              <li>
+                :hover
+              </li>
+              <li>
+                :active
+              </li>
+              <li>
+                :target
+              </li>
+              <li>
+                :focus
+              </li>
+              <li>
+                :checked
+              </li>
+            </ul>
+          </li>
+          <li>
+            We also can use id selectors.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Do we need transitions? What makes them useful?
+        <ul>
+          <li>
+            It help us to control the animation speed when we change CSS properties.
+          </li>
+          <li>
+            It also lets us to choose what CSS properties to animate ,when the animation starts by using the
+            transition-delay property.
+          </li>
+        </ul>
+      </li>
+      <li>
+        At what point can transitions become a problem?<br>
+        When we have to <strong>wait</strong>.
+      </li>
+      <li>
+        Transitions don't work reliably with the auto keyword being one of the end states. Why is that?
+        <ul>
+          <li>
+            Because transition only works with numerical values.
+          </li>
+          <li>
+            It is the browser which has to make the calculation.
+          </li>
+        </ul>
+      </li>
+      <li>
+        How can we stagger transitions? i.e. make a number of child elements all start at different times?<br>
+        We can set a transition-delay property on each element. Then we increase the start time according to what we
+        want
+        to go first.
+      </li>
+    </ul>
+  </div>
+  </main>
+</body>
