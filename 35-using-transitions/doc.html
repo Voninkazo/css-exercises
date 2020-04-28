@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Transitions</title>
+    <style>
+      button {
+        color: white;
+        font-weight: 900;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 255, 1);
+        width: 7rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        border-inline-start: 0.125rem solid rgb(50,50,128);
+        border-inline-end: 0.125rem solid rgb(50,50,128);
+        border-block-end: 0.25rem solid rgb(0,0, 128);
+        transition-duration: 2s;
+        transition-property: background-color, border-width, padding;
+        position: relative;
+        left: 0;
+        right: 0;
+      }
+      button:hover,
+      button:focus {
+        background-color: rgba(0, 0, 255, 0.5);
+      }
+      button:active {
+        border-width: 0;
+        padding-inline-start: 17px;
+        padding-inline-end: 17px;
+        padding-block-end: 10px;
+      }
+      </style>
+  </head>
+
+  <body>
+      <button>
+      Log in
+      </button>
+  </body>
+</html>
