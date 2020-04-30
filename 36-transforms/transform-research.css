@@ -1,0 +1,50 @@
+/*
+    Name the functions we can use in a transform's value?
+    --scale()
+    --scaleX()
+    --scaleY()
+    --scaleZ()
+    --scale3D()
+    --rotate()
+    --rotateX()
+    --rotateY()
+    --rotateZ()
+    --rotate3D()
+    --translate()
+    --translateX()
+    --translateY()
+    --translateZ()
+    --translate3D()
+    --skew()
+    --skewX()
+    --skewY()
+    --matrix()
+    --matrixX()
+    --matrix3D()
+    --perspective()
+
+
+    Why do we have to use separate functions, in order, and as values, e.g. transform: scale(0.5) rotate(45deg); when we could have had separate properties like: transform-scale: 0.5;, or transform-rotate: 45deg?
+    --Because, computer dos not know what order we want to give the functions.
+
+    Often, we want to move the central pin or axis of the transform away from its default position. What property do we use to set that?
+    We use the transform-origin property.
+
+    Why is it preferable to use transform: translate() rather than position and its associated properties?
+    Translate will do a local translation whereas position doesn't account on rotate.
+
+    When an element is translated / transformed, what happens to the flow of the document?
+    It moves moves from where it was positioned.
+
+    Therefore, what layout method is transform similar to?
+    It is similar to position.
+
+    What problems can you run in to when overriding a transform in a more specific selector?
+    The property in the base selector will be overriden by the more specific selector that is set at last.
+
+    If we want to go 3D, we need to use another property to set the view over the scene. What is that property?
+    The property is transform-style that renders every side of the skew.
+
+    We can control what the transform uses in its calculations in terms of the box model. What property can we use to adjust this?
+    --It is the transform-box which defines the layout box to which the transform and transform-origin properties relate.
+*/
