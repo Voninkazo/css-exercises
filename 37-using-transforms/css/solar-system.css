@@ -74,11 +74,12 @@
   transform: translate(-50%, -50%) rotate(1turn);
 }
 .scene:hover #earth-system {
-  transform: translate(82%, -50%)  rotate(12turn);
+
 }
 .scene:hover #earth {
-  transform: translate(-50%, -50%);
+
 }
 .scene:hover #luna {
-   transform: translate(55px, -5px);
+   transform: translate(55px) rotate(12turn);
+  transform-origin: -55px 50%;
 }
