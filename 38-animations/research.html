@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width">
   <title>Animation</title>
   <style>
-    html {
+    body {
       background-color: gray;
       color: white;
     }
 
-    body  h1 {
+    body h1 {
       background-color: black;
       font-weight: 900;
       text-align: center;
@@ -26,6 +26,7 @@
 
     section:nth-of-type(2) div {
       animation-direction: reverse;
+      animation-delay: 3s;
     }
 
 
@@ -35,7 +36,7 @@
       }
 
       20% {
-        margin-inline-start: 10rem;
+        margin-inline-start: 30rem;
         transform: rotate(360deg);
       }
 
@@ -43,9 +44,11 @@
         border-radius: 10%;
         background-color: green;
       }
+
       50% {
         background-color: hotpink;
       }
+
       60% {
         background-color: cyan;
         color: red;
@@ -60,10 +63,10 @@
       }
     }
 
-    section>div {
+    section > div {
       height: 5rem;
       width: 10rem;
-      border-radius: 30%;
+      border-radius: 50%;
       animation-duration: 20s;
       animation-name: pulse;
       animation-iteration-count: infinite;
@@ -152,25 +155,26 @@
       <nav>
         <ol>
           <li>
-            Keyframe Animation setup needs some unique code, it starts with the <strong> symbol(@)</strong>.
+            Keyframe Animation setup needs some unique code, it starts with the <strong> symbol(@keyframe)</strong>.
           </li>
           <li>
             What makes the keyframes code different to the rest of CSS?<br>
-            It is different becasue it uses prefixes. <br>It also enables us to control more aspects of an animation.
+            Keyframes cannot have queries.<br>
+            It is different because it uses prefixes. <br>It also enables us to control more aspects of an animation.
             <br> And we can set a timeline so that we can set the complexity if our code.
           </li>
           <li>
             How do we use a keyframe animation we set up earlier as a property in a ruleset for an element?
-            We can just change
+            We set the "animation-name" and the "animation-duration" properties on the default selectors.
 
           </li>
           <li>
             Keyframe animations have other keywords that aren't available in transitions, what are these keywords?<br>
-            The "from" and "to" keywords.
+            The reverse, alternate, alternate-reverse, and the infinite keywords.
           </li>
           <li>
             How many properties can we animate at once?<br>
-            We can aniamte many properies as we can at once when we are using the keyframes.
+            We can aniamte many properies as we can at once when we are using the keyframes if it is animatable.
           </li>
           <li>
             What properties are animatable?
