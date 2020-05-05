@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animation</title>
+  <style>
+    html {
+      background-color: gray;
+      color: white;
+    }
+
+    body  h1 {
+      background-color: black;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    section>div p {
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-align: center;
+      padding-block-start: 1.75rem;
+    }
+
+    section:nth-of-type(2) div {
+      animation-direction: reverse;
+    }
+
+
+    @keyframes pulse {
+      0% {
+        background-color: black;
+      }
+
+      20% {
+        margin-inline-start: 10rem;
+        transform: rotate(360deg);
+      }
+
+      30% {
+        border-radius: 10%;
+        background-color: green;
+      }
+      50% {
+        background-color: hotpink;
+      }
+      60% {
+        background-color: cyan;
+        color: red;
+      }
+
+      75% {
+        border-radius: 50%;
+      }
+
+      100% {
+        background-color: rgb(255, 65, 54);
+      }
+    }
+
+    section>div {
+      height: 5rem;
+      width: 10rem;
+      border-radius: 30%;
+      animation-duration: 20s;
+      animation-name: pulse;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-out;
+    }
+
+    section>div:first-of-type {
+      background-color: yellow;
+    }
+
+    section>div:nth-of-type(2) {
+      background-color: red;
+    }
+
+    section>div:nth-of-type(3) {
+      background-color: blue;
+    }
+
+    section>div:nth-of-type(4) {
+      background-color: green;
+    }
+
+    section:last-of-type {
+      margin-block-start: 3rem;
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+    }
+
+    section:last-of-type ul li {
+      line-height: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Animation</h1>
+  </header>
+  <main>
+    <section>
+      <div>
+        <p>
+          Hello world
+        </p>
+      </div>
+      <div>
+        <p>
+          Hi there
+        </p>
+      </div>
+      <div>
+        <p>
+          See you
+        </p>
+      </div>
+      <div>
+        <p>
+          Next time
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p>
+          Hello world
+        </p>
+      </div>
+      <div>
+        <p>
+          Hi there
+        </p>
+      </div>
+      <div>
+        <p>
+          See you
+        </p>
+      </div>
+      <div>
+        <p>
+          Next time
+        </p>
+      </div>
+    </section>
+    <section>
+      <nav>
+        <ol>
+          <li>
+            Keyframe Animation setup needs some unique code, it starts with the <strong> symbol(@)</strong>.
+          </li>
+          <li>
+            What makes the keyframes code different to the rest of CSS?<br>
+            It is different becasue it uses prefixes. <br>It also enables us to control more aspects of an animation.
+            <br> And we can set a timeline so that we can set the complexity if our code.
+          </li>
+          <li>
+            How do we use a keyframe animation we set up earlier as a property in a ruleset for an element?
+            We can just change
+
+          </li>
+          <li>
+            Keyframe animations have other keywords that aren't available in transitions, what are these keywords?<br>
+            The "from" and "to" keywords.
+          </li>
+          <li>
+            How many properties can we animate at once?<br>
+            We can aniamte many properies as we can at once when we are using the keyframes.
+          </li>
+          <li>
+            What properties are animatable?
+            <ul>
+              <li>
+                -moz-outline-radius
+              </li>
+              <li>
+                -moz-outline-radius-bottomleft
+              </li>
+              <li>
+                -moz-outline-radius-bottomright
+              </li>
+              <li>
+                -moz-outline-radius-topleft
+              </li>
+              <li>
+                -moz-outline-radius-topright
+              </li>
+              <li>
+                -webkit-line-clamp
+              </li>
+              <li>
+                -webkit-text-fill-color
+              </li>
+              <li>
+                -webkit-text-stroke
+              </li>
+              <li>
+                -webkit-text-stroke-color
+              </li>
+              <li>
+                all
+              </li>
+              <li>
+                backgruond-color
+              </li>
+              <li>
+                color
+              </li>
+              <li>
+                margin
+              </li>
+              <li>
+                border
+              </li>
+              <li>
+                gap
+              </li>
+              <li>
+                fonts
+              </li>
+              <li>
+                width
+              </li>
+              <li>
+                padding
+              </li>
+              <li>
+                scale
+              </li>
+              <li>
+                scroll
+              </li>
+              <li>
+                text
+              </li>
+              <li>
+                transform
+              </li>
+              <li>
+                vertical-align
+              </li>
+              <li>
+                word-spacing
+              </li>
+              <li>
+                z-index
+              </li>
+              <li>
+                zoom
+              </li>
+              <li>
+                top
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </main>
+</body>
+
+</html>

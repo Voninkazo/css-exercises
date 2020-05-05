@@ -25,11 +25,13 @@
 
 .orbit {
   border: 1px dashed #555;
+
 }
 
 #solar-system {
   width: var(--solar-system-size);
   height: var(--solar-system-size);
+
 }
 
 #sun {
@@ -71,7 +73,8 @@
 }
 
 .scene:hover #solar-system {
-  transform: translate(-50%, -50%) rotate(1turn);
+  transform: translate(-55%, -50%) rotate(1turn);
+
 }
 .scene:hover #earth-system {
 
@@ -80,6 +83,5 @@
 
 }
 .scene:hover #luna {
-   transform: translate(55px) rotate(12turn);
-  transform-origin: -55px 50%;
+
 }
