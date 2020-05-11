@@ -50,11 +50,12 @@
       transform: translateY(0px);
   }
 
-  95% {
-    transform: translateY(400px) scale(2, 1);
+  98% {
+    transform: scale(1, 1);
+    top: calc(var(--ball-diameter) * 4);
   }
   100%{
-      transform: translateY(400px);
+      transform: scale(1.2, 0.8);
   }
 }
 
