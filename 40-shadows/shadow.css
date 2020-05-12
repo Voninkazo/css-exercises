@@ -1,8 +1,9 @@
 /*
 1-- box-shadow and text-shadow have very similar value syntax. Where do they differ?
-They are diffrent when we use the inset keyword value, that means this value does not work with text-shadow.
+They are diffrent when we use the inset keyword value, that means this value does not work with text-shadow. The text-shadow doesn't have thickness.
 
 2--If I wanted to create a hard-edge shadow, one that looks like a solid border, what combination of values would I need to use?
+values: x y offset(blur) spread-radious(thikness);
 
 
 3--Is it possible to create a shadow on a circular element? What about a polygon?

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shadows</title>
+  <style>
+    body header h1 {
+      font-family: Montserrat;
+      text-align: center;
+      background-color: black;
+      font-size: 2rem;
+      color: black;
+      text-shadow: 1px 1px 2px red, 0 0 1em yellow, 0 0 0.2em blue;
+    }
+
+    body>div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div p {
+      background-color: #B10DC9;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 1.5rem;
+      box-shadow: 0 0 0 10px #F4AAB9,
+              0 0 0 20px red;
+      border-radius: 50%;
+      text-shadow: 1px 1px 2px black, 0 0 1rem blue, 0 0 0.2rem blue;
+      animation-direction: alternate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: shadow;
+    }
+    @keyframes shadow {
+      0% {
+        text-shadow: 1px 1px 2px black, 0 0 1rem blue, 0 0 0.2rem blue;
+      }
+      50% {
+        text-shadow: red 0 -2px;
+      }
+      70% {
+        font-size: 5rem;
+      }
+      100% {
+        text-shadow: #FC0 1px 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Shadows
+    </h1>
+  </header>
+  <div>
+    <p>
+      That is what sadow is
+    </p>
+  </div>
+</body>
+
+</html>
