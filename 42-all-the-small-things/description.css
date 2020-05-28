@@ -1,0 +1,129 @@
+/*CURSOR
+  The cursor property sets the type of the cursor to show when the mouse pointer is over an element.
+  --->Values:
+  --auto,
+  --default,
+  --none,
+  --context-menu,
+  --help,
+  --pointer,
+  --progress,
+  --wait,
+  --cell,
+  --crosshair,
+  --text,
+  --vertical-text,
+  --alias,
+  --copy,
+  --move,
+  --no-drop,
+  --not-allowed,
+  --grab,
+  --grabbing,
+  --all-scroll,
+  --col-resize,
+  --row-resize,
+  --n-resize,
+  --e-resize,
+  --we-resize,
+  --w-resize,
+  --zoom-in,
+  --zoom-out
+*/
+
+
+/*
+  pointer-events
+*/
+
+
+/*
+  outline
+*/
+
+
+/*
+  filter
+*/
+
+
+/*
+  appearance
+  --none;
+  --auto;
+  --button;
+  --textfield;
+  --searchfield;
+  --textarea;
+  --push-button;
+  --button-bevel;
+  --slider-horizontal;
+  --checkbox;
+  --radio;
+  --square-button;
+  --menulist;
+  --menulist-button;
+  --listbox;
+  --meter;
+  --progress-bar;
+-moz-appearance: scrollbarbutton-up;
+-moz-appearance: button-bevel;
+-webkit-appearance: media-mute-button;
+-webkit-appearance: caret;
+*/
+
+
+/*
+  The object-fit property sets how the content of an element like img or video should be resized to fit its container.
+  Values:
+  --none,
+  --slce-down,
+  --contain,
+  --cover,
+  --fill
+*/
+
+
+/*
+  scroll-snap-align
+*/
+
+/*  PSEUDO-CLASS SELECTORS
+:focus
+  It represents an element that is focused when a user clicks or taps on the element or selects it with the keyboard's "tab' key.
+  We can change the color of the element or the background.
+
+
+:focus-within
+We also can use the ":focus-within" if we want to select an element that contains a focused element.
+
+:visited
+It represents the links that the user has visited. We have to set this selector.
+Any subsequent link-related pseudo-class (:link, :hover, or :active) that has at least equal specificity will overrid this seclector, so we need to put the :visited rule after the :link rule but before the :hover and :active rules.
+
+:active
+The :active pseudo-class is commonly used on <a> and <button> elements when the user presses down the primary mouse button. It has the same specificity as the :visited.
+
+:target
+
+:disabled
+The :disabled CSS pseudo-class represents any disabled element. That means it is desabled and can't be activated (selected, clicked on, typed into, etc.) or accept focus.
+
+:empty
+The empty CSS pseudo-class represents an element that has no child inside like div without paragraph.
+
+:not()
+The :not() CSS pseudo-class represents elements that do not match a list of selectors. We use when want to select all of the elemts in a document but there is only one that we don't want to be included.
+
+:matches()
+ */
+
+ /*
+ ::first-letter
+  The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).
+
+@supports
+
+attr()
+ */
+
