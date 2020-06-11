@@ -19,6 +19,7 @@
   background-color: inherit;
   line-height: 1;
   padding: 1rem;
+  margin-block-start: 1rem;
 }
 
 .example > article > header {
@@ -38,8 +39,25 @@
 }
 
 /* 1 */
-[data-example="1"] {
-
+[data-example="1"] article {
+  border: 1rem solid;
+}
+[data-example="1"] article > div {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+}
+[data-example="1"] article > header h2,
+[data-example="1"] article > content p {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+[data-example="1"] p,
+[data-example="1"] h2 {
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+}
+.example {
+  padding: 0;
 }
 
 /* 2 */
