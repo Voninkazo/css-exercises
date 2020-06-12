@@ -13,8 +13,8 @@
 }
 
 /* 4 */
-[data-example="4"] {
-
+[data-example="4"] div {
+  align-content: center;
 }
 
 /* 5 */
