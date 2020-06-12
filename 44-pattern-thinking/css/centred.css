@@ -13,16 +13,37 @@
 }
 
 /* 4 */
-[data-example="4"] div {
-  align-content: center;
+[data-example="4"] p {
+  display: inline-block;
 }
-
+[data-example="4"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+[data-example="4"] div {
+  text-align-last: center;
+}
 /* 5 */
-[data-example="5"] {
-
+[data-example="5"] p {
+  max-width: max-content;
+  display: inline-block;
+}
+[data-example="5"] div {
+  display: block;
+  margin-block-start: 2.5rem;
+  text-align: center;
 }
 
 /* 6 */
 [data-example="6"] {
-
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+[data-example="6"] div {
+ display: grid;
+ align-items: center;
+ justify-content: center;
 }
