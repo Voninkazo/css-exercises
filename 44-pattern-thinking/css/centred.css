@@ -27,15 +27,22 @@
   margin-inline-start: 1rem;
 }
 /* 5 */
+[data-example="5"] div{
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  vertical-align: center;
+  transform: translate(0, -50%);
+}
 [data-example="5"] p {
-  max-width: max-content;
   display: inline-block;
 }
-[data-example="5"] div {
-  display: block;
-  text-align: center;
-  margin-block-start: 2.5rem;
-}
+
 
 /* 6 */
 [data-example="6"] {

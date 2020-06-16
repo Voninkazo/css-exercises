@@ -20,26 +20,49 @@
 }
 
 /* 7 */
-[data-example="7"] div {
+[data-example="7"] {
+
+}
+[data-example="7"] .columns{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  margin-inline-start: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+[data-example="7"] aside{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+[data-example="7"] aside{
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
   margin-inline-end: 1rem;
+  margin-inline-start: 1rem;
+}
+[data-example="7"] article {
+  margin-inline-start: 1rem;
   margin-block-end: 1rem;
   margin-block-start: 1rem;
 }
-
-[data-example="7"] {
-  display: grid;
-}
-
 /* 8 */
 [data-example="8"] {
-
+  display: flex;
+  justify-content: stretch;
 }
+[data-example="8"] > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  flex-grow: 1;
+}
+[data-example="8"] p {
+  text-align:left;
+}
+
 
 /* 9 */
 [data-example="9"] {
-
-}
+  columns: 2;
+  }
+  [data-example="9"] aside,
+  [data-example="9"] article{
+    height:200px;
+  }
