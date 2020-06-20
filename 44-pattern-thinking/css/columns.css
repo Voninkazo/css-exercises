@@ -56,7 +56,16 @@
 [data-example="8"] p {
   text-align:left;
 }
-
+[data-example="8"] aside {
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+    margin-inline-end: 1rem;
+}
+[data-example="8"] article {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  margin-inline-start: 1rem;
+}
 
 /* 9 */
 [data-example="9"] {
@@ -64,5 +73,15 @@
   }
   [data-example="9"] aside,
   [data-example="9"] article{
-    height:200px;
+    height:180px;
   }
+  /* [data-example="9"] aside {
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+    margin-inline-end: 1rem;
+}
+[data-example="9"] article {
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  margin-inline-start: 1rem;
+} */
